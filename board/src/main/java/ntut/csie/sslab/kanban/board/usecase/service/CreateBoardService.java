@@ -25,7 +25,7 @@ public class CreateBoardService implements CreateBoardUseCase {
 	public CqrsOutput execute(CreateBoardInput input) {
 		Board board = BoardBuilder.newInstance()
 				.name(input.getName())
-				.teamId(input.getTeamId())
+				//.teamId(input.getTeamId())
 				.userId(input.getUserId())
 				.build();
 		board.becameBoardMember(BoardMemberType.Manager, input.getUserId());

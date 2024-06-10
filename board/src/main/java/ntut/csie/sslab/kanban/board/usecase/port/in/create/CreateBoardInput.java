@@ -23,6 +23,7 @@ public class CreateBoardInput implements Input{
 		this.userId = userId;
 	}
 
+
 	public String getTeamId() {
 		return teamId;
 	}
@@ -30,4 +31,6 @@ public class CreateBoardInput implements Input{
 	public void setTeamId(String teamId) {
 		this.teamId = teamId;
 	}
+
+
 }
